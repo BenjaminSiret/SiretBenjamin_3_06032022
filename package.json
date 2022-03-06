@@ -1,0 +1,19 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "projet_3 formation JavaScript / React",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminSiret/SiretBenjamin_3_06032022.git"
+  },
+  "author": "SiretBenjamin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminSiret/SiretBenjamin_3_06032022/issues"
+  },
+  "homepage": "https://github.com/BenjaminSiret/SiretBenjamin_3_06032022#readme"
+}
