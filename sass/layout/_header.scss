@@ -8,7 +8,7 @@ header {
 
   .location {
     width: 100%;
-    background-color: $colour-background-secondary;
+    background-color: $colour-background-tertiary;
     text-align: center;
     padding: 12px 0 12px 16px;
     box-shadow: 0px 3px 4px 0px rgba(100, 100, 100, 0.3) inset;
@@ -18,7 +18,7 @@ header {
     border: none;
     background-color: transparent;
     font-weight: 500;
-    font-family: $font-text;
+    font-family: inherit;
     padding-left: 8px;
 
     &:focus {
