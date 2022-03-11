@@ -20,5 +20,9 @@ header {
     font-weight: 500;
     font-family: $font-text;
     padding-left: 8px;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

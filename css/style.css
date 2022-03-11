@@ -27,5 +27,8 @@ header input {
   font-family: "Roboto", sans-serif;
   padding-left: 8px;
 }
+header input:focus {
+  outline: none;
+}
 
 /*# sourceMappingURL=style.css.map */
