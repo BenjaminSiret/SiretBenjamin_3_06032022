@@ -1,6 +1,6 @@
 #restaurants {
   background-color: $colour-background-secondary;
-  padding: 33px 20px;
+  padding: 38px 20px;
 
   .cards-container {
     padding: 0;
@@ -25,7 +25,7 @@
         border-radius: 16px 16px 0 0;
       }
 
-      i {
+      .fa-heart {
         font-size: 26px;
       }
     }

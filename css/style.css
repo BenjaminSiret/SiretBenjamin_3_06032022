@@ -125,7 +125,7 @@ header input:focus {
 
 #restaurants {
   background-color: #f6f6f6;
-  padding: 33px 20px;
+  padding: 38px 20px;
 }
 #restaurants .cards-container {
   padding: 0;
@@ -150,7 +150,7 @@ header input:focus {
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
-#restaurants .cards-container .card i {
+#restaurants .cards-container .card .fa-heart {
   font-size: 26px;
 }
 
