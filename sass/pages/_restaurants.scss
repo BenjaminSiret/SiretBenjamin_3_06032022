@@ -8,15 +8,25 @@
 
     .card {
       background-color: $colour-background-primary;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      @include box-shadow;
 
       &-content {
-        display: flex;
+        @include flex-center;
+        padding: 12px 20px 12px 12px;
+        line-height: 1.5;
       }
+
       &-img {
         width: 100%;
         max-height: 170px;
         object-fit: cover;
         border-radius: 16px 16px 0 0;
+      }
+
+      i {
+        font-size: 26px;
       }
     }
   }
