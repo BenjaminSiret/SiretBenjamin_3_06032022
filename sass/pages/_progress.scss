@@ -1,0 +1,50 @@
+.progress {
+  padding: 33px 20px;
+
+  h2 {
+    margin-bottom: 26px;
+  }
+
+  &-flow {
+    list-style: none;
+    padding-left: 10px;
+  }
+
+  &-step:nth-of-type(3) {
+    background-color: lighten($colour-primary, 36%);
+
+    i {
+      color: $colour-primary;
+    }
+  }
+
+  &-step {
+    display: flex;
+    align-items: center;
+    background-color: $colour-background-secondary;
+    margin-bottom: 26px;
+    border-radius: 20px;
+    padding: 7px;
+    width: 95%;
+    max-width: 325px;
+    font-weight: 500;
+    @include box-shadow;
+
+    &-num {
+      padding-top: 2px;
+      width: 23px;
+      height: 21px;
+      background-color: $colour-primary;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      position: relative;
+      left: -18px;
+    }
+
+    i {
+      color: #7d7d7d;
+      margin-right: 18px;
+    }
+  }
+}

@@ -13,7 +13,6 @@ h1 {
 .button {
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 95%);
   color: white;
-  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   border: none;
   font-family: inherit;
   padding: 16px;
@@ -21,6 +20,7 @@ h1 {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+  box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
 }
 
 header {
@@ -60,6 +60,50 @@ header input:focus {
   font-weight: 300;
   margin-bottom: 45px;
   padding: 0 20px;
+}
+
+.progress {
+  padding: 33px 20px;
+}
+.progress h2 {
+  margin-bottom: 26px;
+}
+.progress-flow {
+  list-style: none;
+  padding-left: 10px;
+}
+.progress-step:nth-of-type(3) {
+  background-color: #f4eefc;
+}
+.progress-step:nth-of-type(3) i {
+  color: #9356dc;
+}
+.progress-step {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  margin-bottom: 26px;
+  border-radius: 20px;
+  padding: 7px;
+  width: 95%;
+  max-width: 325px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+}
+.progress-step-num {
+  padding-top: 2px;
+  width: 23px;
+  height: 21px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: relative;
+  left: -18px;
+}
+.progress-step i {
+  color: #7d7d7d;
+  margin-right: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
