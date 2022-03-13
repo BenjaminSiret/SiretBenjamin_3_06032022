@@ -10,6 +10,11 @@ h1 {
   padding: 0 45px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .button {
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 95%);
   color: white;
@@ -104,6 +109,27 @@ header input:focus {
 .progress-step i {
   color: #7d7d7d;
   margin-right: 18px;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+  padding: 33px 20px;
+}
+#restaurants .cards-container {
+  padding: 0;
+  list-style: none;
+}
+#restaurants .cards-container .card {
+  background-color: white;
+}
+#restaurants .cards-container .card-content {
+  display: flex;
+}
+#restaurants .cards-container .card-img {
+  width: 100%;
+  max-height: 170px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

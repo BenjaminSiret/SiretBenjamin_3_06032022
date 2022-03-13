@@ -1,0 +1,23 @@
+#restaurants {
+  background-color: $colour-background-secondary;
+  padding: 33px 20px;
+
+  .cards-container {
+    padding: 0;
+    list-style: none;
+
+    .card {
+      background-color: $colour-background-primary;
+
+      &-content {
+        display: flex;
+      }
+      &-img {
+        width: 100%;
+        max-height: 170px;
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+      }
+    }
+  }
+}
