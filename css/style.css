@@ -5,9 +5,23 @@ body {
   margin: 0;
 }
 
-h1 {
+h1,
+h3,
+p {
   margin: 0;
+}
+
+h1 {
   padding: 0 45px;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .button {
@@ -25,8 +39,9 @@ h1 {
 
 header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 header .logo {
   width: 180px;
@@ -84,11 +99,13 @@ header input:focus {
   background-color: #f6f6f6;
   margin-bottom: 26px;
   border-radius: 20px;
-  padding: 7px;
+  padding: 24px 7px;
   width: 95%;
-  max-width: 325px;
-  font-weight: 500;
+  max-width: 500px;
   box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+}
+.progress-step p {
+  font-weight: 500;
 }
 .progress-step-num {
   padding-top: 2px;
@@ -104,6 +121,37 @@ header input:focus {
 .progress-step i {
   color: #7d7d7d;
   margin-right: 18px;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+  padding: 38px 20px;
+}
+#restaurants .cards-container {
+  padding: 0;
+  list-style: none;
+}
+#restaurants .cards-container .card {
+  background-color: white;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+}
+#restaurants .cards-container .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px 12px 12px;
+  line-height: 1.5;
+}
+#restaurants .cards-container .card-img {
+  width: 100%;
+  max-height: 170px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+#restaurants .cards-container .card .fa-heart {
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */

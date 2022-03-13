@@ -24,11 +24,14 @@
     background-color: $colour-background-secondary;
     margin-bottom: 26px;
     border-radius: 20px;
-    padding: 7px;
+    padding: 24px 7px;
     width: 95%;
-    max-width: 325px;
-    font-weight: 500;
+    max-width: 500px;
     @include box-shadow;
+
+    p {
+      font-weight: 500;
+    }
 
     &-num {
       padding-top: 2px;
