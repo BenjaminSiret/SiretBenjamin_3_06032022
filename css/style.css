@@ -53,12 +53,12 @@ header input:focus {
 .presentation {
   text-align: center;
   background-color: #f6f6f6;
-  padding: 40px 0 50px;
+  padding: 40px 0 70px;
 }
 .presentation .subtitle {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   padding: 0 20px;
 }
 
