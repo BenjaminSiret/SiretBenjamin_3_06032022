@@ -1,12 +1,12 @@
 footer {
   background-color: $colour-background-quaternary;
   color: white;
-  width: 100%;
+  width: inherit;
   padding: 22px;
 
   .footer-logo {
     filter: invert(100%);
-    width: 30%;
+    width: 100px;
   }
 
   .footer-content {
