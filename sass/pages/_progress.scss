@@ -27,7 +27,7 @@
     padding: 24px 7px;
     width: 100%;
     max-width: 500px;
-    @include box-shadow;
+    box-shadow: $shadow-primary;
 
     p {
       font-weight: 500;

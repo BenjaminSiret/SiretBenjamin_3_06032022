@@ -1,9 +1,5 @@
 .button {
-  background: linear-gradient(
-    175deg,
-    rgba(255, 121, 218, 1) 0%,
-    rgba(147, 86, 220, 1) 95%
-  );
+  background: $gradient-primary;
   color: white;
   border: none;
   font-family: inherit;
@@ -12,5 +8,10 @@
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-  @include box-shadow;
+  box-shadow: $shadow-primary;
+
+  &:hover {
+    background: $gradient-light;
+    box-shadow: $shadow-darken;
+  }
 }

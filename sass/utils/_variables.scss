@@ -7,5 +7,20 @@ $colour-background-secondary: #f6f6f6;
 $colour-background-tertiary: #e9e9e9;
 $colour-background-quaternary: #383838;
 
+$gradient-primary: linear-gradient(
+  175deg,
+  rgba(255, 121, 218, 1) 0%,
+  rgba(147, 86, 220, 1) 95%
+);
+
+$gradient-light: linear-gradient(
+  175deg,
+  rgba(255, 147, 244, 1) 0%,
+  rgba(173, 112, 246, 1) 95%
+);
+
+$shadow-primary: 0 4px 8px rgba(20, 20, 20, 0.2);
+$shadow-darken: 0 1px 9px rgba(20, 20, 20, 0.5);
+
 $font-text: "Roboto", sans-serif;
 $font-title: "Shrikhand", cursive;

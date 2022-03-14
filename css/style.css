@@ -40,6 +40,10 @@ a {
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
 }
+.button:hover {
+  background: linear-gradient(175deg, #ff93f4 0%, #ad70f6 95%);
+  box-shadow: 0 1px 9px rgba(20, 20, 20, 0.5);
+}
 
 header {
   display: flex;
