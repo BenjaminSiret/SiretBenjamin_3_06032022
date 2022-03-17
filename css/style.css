@@ -62,6 +62,11 @@ header .location {
   padding: 12px 0;
   box-shadow: 0px 3px 4px 0px rgba(100, 100, 100, 0.3) inset;
 }
+@media (min-width: 900px) {
+  header .location {
+    width: 40%;
+  }
+}
 header .location .fa-location-dot {
   margin-left: 70px;
 }
@@ -82,6 +87,11 @@ footer {
   width: inherit;
   padding: 22px;
 }
+@media (min-width: 550px) {
+  footer {
+    text-align: center;
+  }
+}
 footer .footer-logo {
   filter: invert(100%);
   width: 100px;
@@ -99,10 +109,24 @@ footer .footer-content .fa-handshake-angle {
   margin-right: 10px;
 }
 
+@media (min-width: 1160px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .presentation {
   text-align: center;
   background-color: #f6f6f6;
   padding: 40px 0 70px;
+}
+@media (min-width: 1160px) {
+  .presentation {
+    width: 50%;
+    background-color: inherit;
+    margin: auto;
+  }
 }
 .presentation .subtitle {
   font-size: 18px;
@@ -113,6 +137,17 @@ footer .footer-content .fa-handshake-angle {
 
 .progress {
   padding: 33px 20px;
+}
+@media (min-width: 1160px) {
+  .progress {
+    width: 42%;
+  }
+}
+@media (min-width: 550px) and (max-width: 1159px) {
+  .progress {
+    margin: auto;
+    max-width: 500px;
+  }
 }
 .progress h2 {
   margin-bottom: 26px;
@@ -161,9 +196,25 @@ footer .footer-content .fa-handshake-angle {
   background-color: #f6f6f6;
   padding: 38px 20px;
 }
+@media (min-width: 1160px) {
+  #restaurants {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) and (max-width: 1159px) {
+  #restaurants {
+    text-align: center;
+  }
+}
 #restaurants .cards-container {
   padding: 0;
   list-style: none;
+}
+@media (min-width: 1160px) {
+  #restaurants .cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 #restaurants .cards-container .card {
   position: relative;
@@ -171,6 +222,17 @@ footer .footer-content .fa-handshake-angle {
   border-radius: 16px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+}
+@media (min-width: 1160px) {
+  #restaurants .cards-container .card {
+    width: 23%;
+  }
+}
+@media (min-width: 550px) and (max-width: 1159px) {
+  #restaurants .cards-container .card {
+    max-width: 600px;
+    margin: auto auto 30px;
+  }
 }
 #restaurants .cards-container .card-content {
   display: flex;

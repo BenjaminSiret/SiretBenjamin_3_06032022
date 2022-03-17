@@ -2,6 +2,11 @@
   text-align: center;
   background-color: $colour-background-secondary;
   padding: 40px 0 70px;
+  @include desktop-only {
+    width: 50%;
+    background-color: inherit;
+    margin: auto;
+  }
 
   .subtitle {
     font-size: 18px;

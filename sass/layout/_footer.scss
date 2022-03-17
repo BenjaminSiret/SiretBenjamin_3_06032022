@@ -3,6 +3,9 @@ footer {
   color: white;
   width: inherit;
   padding: 22px;
+  @media (min-width: 550px) {
+    text-align: center;
+  }
 
   .footer-logo {
     filter: invert(100%);
