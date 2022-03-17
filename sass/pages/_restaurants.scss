@@ -1,10 +1,20 @@
 #restaurants {
   background-color: $colour-background-secondary;
   padding: 38px 20px;
+  @include desktop-only {
+    width: 100%;
+  }
+  @include tablet-only {
+    text-align: center;
+  }
 
   .cards-container {
     padding: 0;
     list-style: none;
+    @include desktop-only {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .card {
       position: relative;
@@ -12,6 +22,13 @@
       border-radius: 16px;
       margin-bottom: 20px;
       box-shadow: $shadow-primary;
+      @include desktop-only {
+        width: 23%;
+      }
+      @include tablet-only {
+        max-width: 600px;
+        margin: auto auto 30px;
+      }
 
       &-content {
         @include flex-center;

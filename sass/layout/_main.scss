@@ -1,0 +1,6 @@
+main {
+  @include desktop-only {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

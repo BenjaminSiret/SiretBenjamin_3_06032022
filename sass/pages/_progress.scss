@@ -1,5 +1,12 @@
 .progress {
   padding: 33px 20px;
+  @include desktop-only {
+    width: 42%;
+  }
+  @include tablet-only {
+    margin: auto;
+    max-width: 500px;
+  }
 
   h2 {
     margin-bottom: 26px;
