@@ -1,0 +1,148 @@
+/*****PRESENTATION SECTION*******/
+
+.presentation {
+  text-align: center;
+  background-color: $colour-background-secondary;
+  padding: 40px 0 70px;
+  @include desktop-only {
+    width: 50%;
+    background-color: inherit;
+    margin: auto;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 45px;
+    padding: 0 20px;
+  }
+}
+
+/*****PROGRESS SECTION*******/
+
+.progress {
+  padding: 33px 20px;
+  @include desktop-only {
+    width: 42%;
+  }
+  @include tablet-only {
+    margin: auto;
+    max-width: 500px;
+  }
+
+  h2 {
+    margin-bottom: 26px;
+  }
+
+  &-flow {
+    list-style: none;
+    padding-left: 10px;
+  }
+
+  &-step:nth-of-type(3) {
+    background-color: lighten($colour-primary, 36%);
+
+    i {
+      color: $colour-primary;
+    }
+  }
+
+  &-step {
+    display: flex;
+    align-items: center;
+    background-color: $colour-background-secondary;
+    margin-bottom: 26px;
+    border-radius: 20px;
+    padding: 24px 7px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: $shadow-primary;
+
+    p {
+      font-weight: 500;
+    }
+
+    &-num {
+      padding-top: 2px;
+      width: 23px;
+      height: 21px;
+      background-color: $colour-primary;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      position: relative;
+      left: -18px;
+    }
+
+    i {
+      color: #7d7d7d;
+      margin-right: 18px;
+    }
+  }
+}
+
+/*****RESTAURANTS SECTION*******/
+
+#restaurants {
+  background-color: $colour-background-secondary;
+  padding: 38px 20px;
+  @include desktop-only {
+    width: 100%;
+  }
+  @include tablet-only {
+    text-align: center;
+  }
+
+  .cards-container {
+    padding: 0;
+    list-style: none;
+    @include desktop-only {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card {
+      position: relative;
+      background-color: $colour-background-primary;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: $shadow-primary;
+      @include desktop-only {
+        width: 23%;
+      }
+      @include tablet-only {
+        max-width: 600px;
+        margin: auto auto 30px;
+      }
+
+      &-content {
+        @include flex-center;
+        padding: 12px 20px 12px 12px;
+        line-height: 1.5;
+      }
+
+      &-img {
+        width: 100%;
+        max-height: 170px;
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+      }
+
+      &-label {
+        padding: 5px 10px;
+        background-color: $colour-tertiary;
+        color: darken($colour-tertiary, 40);
+        border-radius: 2px;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .fa-heart {
+        font-size: 26px;
+      }
+    }
+  }
+}

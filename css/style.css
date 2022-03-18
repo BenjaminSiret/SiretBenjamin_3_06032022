@@ -116,6 +116,7 @@ footer .footer-content .fa-handshake-angle {
   }
 }
 
+/*****PRESENTATION SECTION*******/
 .presentation {
   text-align: center;
   background-color: #f6f6f6;
@@ -135,6 +136,7 @@ footer .footer-content .fa-handshake-angle {
   padding: 0 20px;
 }
 
+/*****PROGRESS SECTION*******/
 .progress {
   padding: 33px 20px;
 }
@@ -192,6 +194,7 @@ footer .footer-content .fa-handshake-angle {
   margin-right: 18px;
 }
 
+/*****RESTAURANTS SECTION*******/
 #restaurants {
   background-color: #f6f6f6;
   padding: 38px 20px;
