@@ -39,7 +39,7 @@
     padding-left: 10px;
   }
 
-  &-step:nth-of-type(3) {
+  &-step:hover {
     background-color: lighten($colour-primary, 36%);
 
     i {
