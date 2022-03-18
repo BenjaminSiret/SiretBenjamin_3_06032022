@@ -10,7 +10,10 @@ body {
 }
 
 h1,
+h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
 }
@@ -33,12 +36,15 @@ a {
   color: white;
   border: none;
   font-family: inherit;
-  padding: 16px;
+  padding: 15px;
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+}
+.button-order {
+  padding: 15px 45px;
 }
 .button:hover {
   background: linear-gradient(175deg, #ff93f4 0%, #ad70f6 95%);
@@ -133,7 +139,7 @@ input:focus {
 .presentation .subtitle {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 45px;
+  margin: 15px 0 45px;
   padding: 0 20px;
 }
 
@@ -267,16 +273,76 @@ input:focus {
   font-size: 26px;
 }
 
+.menu {
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
+}
 .menu-image {
   width: 100%;
   display: flex;
   z-index: -1;
   top: 20px;
 }
-
 .menu-container {
+  position: relative;
+  bottom: 40px;
+  border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
-  border-radius: 25px 25px 0 0;
+  padding: 30px 16px;
+}
+.menu .name-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+}
+.menu .name-container .name {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  margin-left: 5px;
+}
+.menu .name-container .fa-heart {
+  font-size: 26px;
+}
+.menu-step {
+  margin-top: 40px;
+}
+.menu-step-title {
+  color: #5c5c5c;
+  font-weight: 400;
+  margin: 20px 0 4px;
+  padding-left: 5px;
+}
+.menu-step .underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  margin-left: 5px;
+}
+.menu-card {
+  background-color: white;
+  margin: 15px 0;
+  padding: 9px 18px 9px 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-card-text {
+  line-height: 1.5;
+}
+.menu-card-text h5 {
+  font-size: 18px;
+}
+.menu-card-price {
+  margin-top: 28px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.menu-order {
+  text-align: center;
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
