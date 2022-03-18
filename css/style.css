@@ -158,10 +158,10 @@ footer .footer-content .fa-handshake-angle {
   list-style: none;
   padding-left: 10px;
 }
-.progress-step:nth-of-type(3) {
+.progress-step:hover {
   background-color: #f4eefc;
 }
-.progress-step:nth-of-type(3) i {
+.progress-step:hover i {
   color: #9356dc;
 }
 .progress-step {
