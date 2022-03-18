@@ -1,0 +1,11 @@
+.menu-image {
+  width: 100%;
+  display: flex;
+  z-index: -1;
+  top: 20px;
+}
+
+.menu-container {
+  background-color: $colour-background-secondary;
+  border-radius: 25px 25px 0 0;
+}

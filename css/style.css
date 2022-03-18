@@ -265,4 +265,16 @@ footer .footer-content .fa-handshake-angle {
   font-size: 26px;
 }
 
+.menu-image {
+  width: 100%;
+  display: flex;
+  z-index: -1;
+  top: 20px;
+}
+
+.menu-container {
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+}
+
 /*# sourceMappingURL=style.css.map */
