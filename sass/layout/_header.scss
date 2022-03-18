@@ -1,36 +1,8 @@
 header {
-  @include flex-center;
-  flex-direction: column;
+  text-align: center;
 
   .logo {
     width: 180px;
     margin: 25px 0 10px;
-  }
-
-  .location {
-    width: 100%;
-    background-color: $colour-background-tertiary;
-    text-align: center;
-    padding: 12px 0;
-    box-shadow: 0px 3px 4px 0px rgba(100, 100, 100, 0.3) inset;
-    @media (min-width: 900px) {
-      width: 40%;
-    }
-
-    .fa-location-dot {
-      margin-left: 70px;
-    }
-  }
-
-  input {
-    border: none;
-    background-color: transparent;
-    font-weight: 500;
-    font-family: inherit;
-    padding-left: 8px;
-
-    &:focus {
-      outline: none;
-    }
   }
 }

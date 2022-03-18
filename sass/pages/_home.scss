@@ -1,3 +1,33 @@
+/**********LOCATION********/
+
+.location {
+  width: 100%;
+  background-color: $colour-background-tertiary;
+  text-align: center;
+  padding: 12px 0;
+  box-shadow: 0px 3px 4px 0px rgba(100, 100, 100, 0.3) inset;
+  @media (min-width: 700px) {
+    width: 40%;
+    margin: auto;
+  }
+
+  .fa-location-dot {
+    margin-left: 70px;
+  }
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-family: inherit;
+  padding-left: 8px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 /*****PRESENTATION SECTION*******/
 
 .presentation {
@@ -5,7 +35,7 @@
   background-color: $colour-background-secondary;
   padding: 40px 0 70px;
   @include desktop-only {
-    width: 50%;
+    width: 62%;
     background-color: inherit;
     margin: auto;
   }
@@ -23,7 +53,8 @@
 .progress {
   padding: 33px 20px;
   @include desktop-only {
-    width: 42%;
+    width: 30%;
+    margin-right: 15px;
   }
   @include tablet-only {
     margin: auto;
