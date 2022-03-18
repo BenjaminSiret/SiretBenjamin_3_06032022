@@ -1,6 +1,6 @@
 .menu {
   background-color: $colour-background-secondary;
-
+  padding-bottom: 20px;
   &-image {
     width: 100%;
     display: flex;
@@ -34,6 +34,8 @@
   }
 
   &-step {
+    margin-top: 40px;
+
     &-title {
       color: $colour-quaternary;
       font-weight: 400;
@@ -51,10 +53,29 @@
 
   &-card {
     background-color: $colour-background-primary;
-    margin: 13px 0;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 9px 18px 9px 10px;
     border-radius: 16px;
     box-shadow: $shadow-primary;
     @include flex-center;
+
+    &-text {
+      line-height: 1.5;
+
+      h5 {
+        font-size: 18px;
+      }
+    }
+
+    &-price {
+      margin-top: 28px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+
+  &-order {
+    text-align: center;
+    margin-top: 60px;
   }
 }

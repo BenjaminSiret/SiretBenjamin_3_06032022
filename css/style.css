@@ -36,12 +36,15 @@ a {
   color: white;
   border: none;
   font-family: inherit;
-  padding: 16px;
+  padding: 15px;
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+}
+.button-order {
+  padding: 15px 45px;
 }
 .button:hover {
   background: linear-gradient(175deg, #ff93f4 0%, #ad70f6 95%);
@@ -272,6 +275,7 @@ input:focus {
 
 .menu {
   background-color: #f6f6f6;
+  padding-bottom: 20px;
 }
 .menu-image {
   width: 100%;
@@ -300,6 +304,9 @@ input:focus {
 .menu .name-container .fa-heart {
   font-size: 26px;
 }
+.menu-step {
+  margin-top: 40px;
+}
 .menu-step-title {
   color: #5c5c5c;
   font-weight: 400;
@@ -314,13 +321,28 @@ input:focus {
 }
 .menu-card {
   background-color: white;
-  margin: 13px 0;
-  padding: 10px;
+  margin: 15px 0;
+  padding: 9px 18px 9px 10px;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.menu-card-text {
+  line-height: 1.5;
+}
+.menu-card-text h5 {
+  font-size: 18px;
+}
+.menu-card-price {
+  margin-top: 28px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.menu-order {
+  text-align: center;
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
