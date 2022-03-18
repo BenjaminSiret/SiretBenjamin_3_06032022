@@ -1,11 +1,41 @@
-.menu-image {
-  width: 100%;
-  display: flex;
-  z-index: -1;
-  top: 20px;
-}
-
-.menu-container {
+.menu {
   background-color: $colour-background-secondary;
-  border-radius: 25px 25px 0 0;
+
+  &-image {
+    width: 100%;
+    display: flex;
+    z-index: -1;
+    top: 20px;
+  }
+
+  &-container {
+    position: relative;
+    bottom: 40px;
+    border-radius: 40px 40px 0 0;
+    background-color: $colour-background-secondary;
+    padding: 30px 20px;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+
+    .title {
+      font-family: $font-title;
+      font-size: 24px;
+    }
+
+    .fa-heart {
+      font-size: 26px;
+    }
+  }
+
+  &-step {
+    &-title {
+      color: $colour-quaternary;
+      font-weight: 400;
+    }
+  }
 }
