@@ -14,6 +14,9 @@
     border-radius: 40px 40px 0 0;
     background-color: $colour-background-secondary;
     padding: 30px 16px;
+    @include tablet-only {
+      border-radius: 0;
+    }
   }
 
   .name-container {
@@ -21,6 +24,9 @@
     align-items: center;
     justify-content: space-between;
     width: 94%;
+    @include tablet-only {
+      justify-content: center;
+    }
 
     .name {
       font-family: $font-title;
@@ -30,6 +36,9 @@
 
     .fa-heart {
       font-size: 26px;
+      @include tablet-only {
+        margin-left: 30px;
+      }
     }
   }
 
