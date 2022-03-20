@@ -58,6 +58,12 @@ header .logo {
   width: 180px;
   margin: 25px 0 10px;
 }
+header .fa-arrow-left {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-size: 20px;
+}
 
 footer {
   background-color: #383838;
@@ -306,6 +312,7 @@ input:focus {
 }
 .menu-step {
   margin-top: 40px;
+  padding: 0;
 }
 .menu-step-title {
   color: #5c5c5c;
