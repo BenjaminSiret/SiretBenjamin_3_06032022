@@ -306,6 +306,7 @@ input:focus {
 }
 .menu-step {
   margin-top: 40px;
+  padding: 0;
 }
 .menu-step-title {
   color: #5c5c5c;
