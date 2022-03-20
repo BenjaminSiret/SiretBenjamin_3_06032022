@@ -268,6 +268,9 @@ input:focus {
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
+#restaurants .cards-container .card-text {
+  text-align: left;
+}
 #restaurants .cards-container .card-label {
   padding: 5px 10px;
   background-color: #99e2d0;
@@ -295,13 +298,14 @@ input:focus {
 }
 @media (min-width: 550px) {
   .menu-image {
-    height: 300px;
+    height: 350px;
     object-fit: cover;
   }
 }
 @media (min-width: 1160px) {
   .menu-image {
     z-index: 0;
+    object-position: 50% 59%;
   }
 }
 .menu-container {

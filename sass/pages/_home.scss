@@ -166,6 +166,10 @@ input {
         border-radius: 16px 16px 0 0;
       }
 
+      &-text {
+        text-align: left;
+      }
+
       &-label {
         padding: 5px 10px;
         background-color: $colour-tertiary;
