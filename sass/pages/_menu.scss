@@ -6,6 +6,14 @@
     display: flex;
     z-index: -1;
     top: 20px;
+    @include tablet-only {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @include desktop-only {
+      z-index: 0;
+    }
   }
 
   &-container {
@@ -14,6 +22,33 @@
     border-radius: 40px 40px 0 0;
     background-color: $colour-background-secondary;
     padding: 30px 16px;
+    @include tablet-only {
+      border-radius: 0;
+    }
+
+    @include desktop-only {
+      width: 100%;
+    }
+
+    .step-title-container {
+      width: fit-content;
+      margin-top: 30px;
+      @include tablet-only {
+        margin: 30px auto;
+      }
+      @include desktop-only {
+        margin-bottom: 10px;
+      }
+    }
+    .underline {
+      width: 40px;
+      height: 3px;
+      background-color: $colour-tertiary;
+      margin-left: 5px;
+      @include tablet-only {
+        width: auto;
+      }
+    }
   }
 
   .name-container {
@@ -21,6 +56,14 @@
     align-items: center;
     justify-content: space-between;
     width: 94%;
+    @include tablet-only {
+      width: 60%;
+      margin: auto auto 55px;
+      justify-content: space-evenly;
+    }
+    @include desktop-only {
+      width: 35%;
+    }
 
     .name {
       font-family: $font-title;
@@ -30,25 +73,32 @@
 
     .fa-heart {
       font-size: 26px;
+      @include tablet-only {
+      }
     }
   }
 
   &-step {
-    margin-top: 40px;
+    margin-top: 16px;
     padding: 0;
+    @include tablet-only {
+      margin: auto;
+      width: 70%;
+    }
+
+    @include desktop-only {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
 
     &-title {
       color: $colour-quaternary;
       font-weight: 400;
-      margin: 20px 0 4px;
+      margin-bottom: 4px;
       padding-left: 5px;
-    }
-
-    .underline {
-      width: 40px;
-      height: 3px;
-      background-color: $colour-tertiary;
-      margin-left: 5px;
     }
   }
 
@@ -59,6 +109,9 @@
     border-radius: 16px;
     box-shadow: $shadow-primary;
     @include flex-center;
+    @include desktop-only {
+      width: 27%;
+    }
 
     &-text {
       line-height: 1.5;
