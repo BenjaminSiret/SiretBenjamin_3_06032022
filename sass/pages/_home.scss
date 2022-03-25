@@ -68,8 +68,12 @@ input {
     max-width: 500px;
   }
 
-  h2 {
+  &-title {
     margin-bottom: 26px;
+    @include tablet-only {
+      width: fit-content;
+      margin: auto auto 26px;
+    }
   }
 
   &-flow {

@@ -169,8 +169,14 @@ input:focus {
     max-width: 500px;
   }
 }
-.progress h2 {
+.progress-title {
   margin-bottom: 26px;
+}
+@media (min-width: 550px) {
+  .progress-title {
+    width: fit-content;
+    margin: auto auto 26px;
+  }
 }
 .progress-flow {
   list-style: none;
