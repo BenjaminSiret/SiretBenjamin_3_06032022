@@ -341,6 +341,28 @@ input:focus {
 #restaurants .cards-container .card .fa-heart {
   font-size: 26px;
 }
+#restaurants .cards-container .card .heart {
+  background-color: #9356dc;
+  background-clip: text;
+  color: transparent;
+  position: absolute;
+  right: 20px;
+  opacity: 0;
+}
+#restaurants .cards-container .card .heart:hover {
+  animation: fill 1.5s linear;
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .menu {
   background-color: #f6f6f6;
