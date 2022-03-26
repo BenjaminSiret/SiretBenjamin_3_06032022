@@ -1,9 +1,12 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 
 @import "./base/typo";
 @import "./base/base";
+
 @import "./components/button";
+@import "./components/loader";
 
 @import "./layout/header";
 @import "./layout/footer";
