@@ -4,8 +4,8 @@
   &-image {
     width: 100%;
     display: flex;
-    z-index: -1;
-    top: 20px;
+    max-height: 256px;
+    object-fit: cover;
     @include tablet-only {
       height: 350px;
       object-fit: cover;
