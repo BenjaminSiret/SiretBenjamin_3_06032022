@@ -88,8 +88,7 @@ li {
   opacity: 0;
   pointer-events: none;
 }
-
-.loader {
+.loader-container .loader {
   width: 100px;
   height: 100px;
   border: 6px solid white;
@@ -103,6 +102,30 @@ li {
   left: 0;
   right: 0;
   animation: spin 1.2s linear infinite;
+}
+
+.heart-button {
+  border: none;
+  background-color: inherit;
+}
+.heart-button .fa-heart {
+  font-size: 26px;
+}
+.heart-button .fa-solid {
+  position: absolute;
+  right: 24px;
+  background: linear-gradient(175deg, #ff79da 0%, #9356dc 95%);
+  background-clip: text;
+  color: transparent;
+  transform: scale(0);
+}
+.heart-button:hover .fa-solid {
+  transform: scale(1);
+  transition: all 1.5s;
+}
+.heart-button:hover .fa-regular {
+  opacity: 0.4;
+  transition: all 1.5s;
 }
 
 header {
@@ -337,31 +360,6 @@ input:focus {
   right: 13px;
   font-size: 15px;
   font-weight: 500;
-}
-#restaurants .cards-container .card .fa-heart {
-  font-size: 26px;
-}
-#restaurants .cards-container .card .heart {
-  background-color: #9356dc;
-  background-clip: text;
-  color: transparent;
-  position: absolute;
-  right: 20px;
-  opacity: 0;
-}
-#restaurants .cards-container .card .heart:hover {
-  animation: fill 1.5s linear;
-}
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .menu {

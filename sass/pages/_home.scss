@@ -185,34 +185,6 @@ input {
         font-size: 15px;
         font-weight: 500;
       }
-
-      .fa-heart {
-        font-size: 26px;
-      }
-
-      .heart {
-        background-color: #9356dc;
-        background-clip: text;
-        color: transparent;
-        position: absolute;
-        right: 20px;
-        opacity: 0;
-        &:hover {
-          animation: fill 1.5s linear;
-
-          @keyframes fill {
-            0% {
-              opacity: 0;
-            }
-            50% {
-              opacity: 0.5;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-      }
     }
   }
 }

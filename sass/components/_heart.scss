@@ -1,0 +1,25 @@
+.heart-button {
+  border: none;
+  background-color: inherit;
+  .fa-heart {
+    font-size: 26px;
+  }
+  .fa-solid {
+    position: absolute;
+    right: 24px;
+    background: $gradient-primary;
+    background-clip: text;
+    color: transparent;
+    transform: scale(0);
+  }
+  &:hover {
+    .fa-solid {
+      transform: scale(1);
+      transition: all 1.5s;
+    }
+    .fa-regular {
+      opacity: 0.4;
+      transition: all 1.5s;
+    }
+  }
+}
