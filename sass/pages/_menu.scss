@@ -4,15 +4,12 @@
   &-image {
     width: 100%;
     display: flex;
-    max-height: 256px;
     object-fit: cover;
-    @include tablet-only {
-      height: 350px;
-      object-fit: cover;
-    }
-
+    max-height: 256px;
     @include desktop-only {
       z-index: 0;
+      max-height: none;
+      height: 350px;
       object-position: 50% 59%;
     }
   }

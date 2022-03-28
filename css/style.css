@@ -370,18 +370,14 @@ input:focus {
 .menu-image {
   width: 100%;
   display: flex;
-  max-height: 256px;
   object-fit: cover;
-}
-@media (min-width: 550px) {
-  .menu-image {
-    height: 350px;
-    object-fit: cover;
-  }
+  max-height: 256px;
 }
 @media (min-width: 1160px) {
   .menu-image {
     z-index: 0;
+    max-height: none;
+    height: 350px;
     object-position: 50% 59%;
   }
 }
