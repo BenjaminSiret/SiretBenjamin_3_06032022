@@ -107,13 +107,14 @@ li {
 .heart-button {
   border: none;
   background-color: inherit;
+  position: relative;
 }
 .heart-button .fa-heart {
   font-size: 26px;
 }
 .heart-button .fa-solid {
   position: absolute;
-  right: 24px;
+  right: 4px;
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 95%);
   background-clip: text;
   color: transparent;
@@ -124,7 +125,7 @@ li {
   transition: all 1.5s;
 }
 .heart-button:hover .fa-regular {
-  opacity: 0.4;
+  opacity: 0.3;
   transition: all 1.5s;
 }
 

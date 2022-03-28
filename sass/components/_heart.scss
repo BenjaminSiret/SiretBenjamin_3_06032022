@@ -1,12 +1,13 @@
 .heart-button {
   border: none;
   background-color: inherit;
+  position: relative;
   .fa-heart {
     font-size: 26px;
   }
   .fa-solid {
     position: absolute;
-    right: 24px;
+    right: 4px;
     background: $gradient-primary;
     background-clip: text;
     color: transparent;
@@ -18,7 +19,7 @@
       transition: all 1.5s;
     }
     .fa-regular {
-      opacity: 0.4;
+      opacity: 0.3;
       transition: all 1.5s;
     }
   }
