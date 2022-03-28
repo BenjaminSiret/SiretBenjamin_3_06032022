@@ -370,8 +370,8 @@ input:focus {
 .menu-image {
   width: 100%;
   display: flex;
-  z-index: -1;
-  top: 20px;
+  max-height: 256px;
+  object-fit: cover;
 }
 @media (min-width: 550px) {
   .menu-image {
