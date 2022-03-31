@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "projet_3 formation JavaScript / React",
   "main": "index.js",
-  "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenjaminSiret/SiretBenjamin_3_06032022.git"
