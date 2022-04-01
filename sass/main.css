@@ -1,3 +1,4 @@
+/**********MEDIA QUERIES*********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @-webkit-keyframes hide {
   0% {
@@ -621,6 +622,12 @@ input:focus {
   }
 }
 
+@media (min-width: 846px) {
+  .menu-step {
+    width: 63%;
+  }
+}
+
 @media (min-width: 1160px) {
   .menu-step {
     width: 100%;
@@ -643,12 +650,6 @@ input:focus {
 }
 
 .menu-card {
-  background-color: white;
-  margin: 15px 0;
-  padding: 9px 18px 9px 10px;
-  border-radius: 16px;
-  -webkit-box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
-          box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +659,19 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+          box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (min-width: 1160px) {
+  .menu-card {
+    width: 29%;
+  }
 }
 
 .menu-card:nth-of-type(1) {
@@ -680,22 +694,95 @@ input:focus {
           animation: fadein 2.5s ease-in-out;
 }
 
-@media (min-width: 1160px) {
-  .menu-card {
-    width: 27%;
+.menu-card:hover .menu-card-text {
+  min-width: 72%;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.menu-card:hover .check-box {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.menu-card:hover .check-box::after {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.menu-card .check-box {
+  background: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 70px;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+@media (min-width: 550px) {
+  .menu-card .check-box {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
   }
 }
 
-.menu-card-text {
-  line-height: 1.5;
+@media (min-width: 846px) {
+  .menu-card .check-box {
+    max-width: 80px;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
 }
 
-.menu-card-text h5 {
+.menu-card .check-box::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f058";
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+}
+
+.menu-card-text {
+  min-width: 90%;
+  line-height: 1.5;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-card-text .meal-title {
   font-size: 18px;
+  padding: 9px 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-card-text .meal-subtitle {
+  padding: 0 3px 9px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu-card-price {
-  margin-top: 28px;
+  margin: 28px 16px 0 0;
   font-weight: 500;
   font-size: 15px;
 }
