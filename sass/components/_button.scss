@@ -16,5 +16,6 @@
   &:hover {
     background: $gradient-light;
     box-shadow: $shadow-darken;
+    transition: all 100ms ease-in-out;
   }
 }

@@ -134,6 +134,8 @@ li {
   background: linear-gradient(175deg, #ff93f4 0%, #ad70f6 95%);
   -webkit-box-shadow: 0 1px 9px rgba(20, 20, 20, 0.5);
           box-shadow: 0 1px 9px rgba(20, 20, 20, 0.5);
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .loader-container {
