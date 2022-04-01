@@ -6,7 +6,7 @@
     display: flex;
     object-fit: cover;
     max-height: 256px;
-    @include desktop-only {
+    @include desktop {
       z-index: 0;
       max-height: none;
       height: 350px;
@@ -20,21 +20,21 @@
     border-radius: 40px 40px 0 0;
     background-color: $colour-background-secondary;
     padding: 30px 16px;
-    @include tablet-only {
+    @include tablet {
       border-radius: 0;
     }
 
-    @include desktop-only {
+    @include desktop {
       width: 100%;
     }
 
     .step-title-container {
       width: fit-content;
       margin-top: 30px;
-      @include tablet-only {
+      @include tablet {
         margin: 30px auto;
       }
-      @include desktop-only {
+      @include desktop {
         margin-bottom: 10px;
       }
     }
@@ -43,7 +43,7 @@
       height: 3px;
       background-color: $colour-tertiary;
       margin-left: 5px;
-      @include tablet-only {
+      @include tablet {
         width: auto;
       }
     }
@@ -54,12 +54,12 @@
     align-items: center;
     justify-content: space-between;
     width: 94%;
-    @include tablet-only {
+    @include tablet {
       width: 60%;
       margin: auto auto 55px;
       justify-content: space-evenly;
     }
-    @include desktop-only {
+    @include desktop {
       width: 35%;
     }
 
@@ -71,7 +71,7 @@
 
     .fa-heart {
       font-size: 26px;
-      @include tablet-only {
+      @include tablet {
       }
     }
   }
@@ -80,12 +80,16 @@
     margin-top: 16px;
     padding: 0;
 
-    @include tablet-only {
+    @include tablet {
       margin: auto;
       width: 70%;
     }
 
-    @include desktop-only {
+    @include tablet-large {
+      width: 63%;
+    }
+
+    @include desktop {
       width: 100%;
       display: flex;
       justify-content: space-around;
@@ -102,15 +106,16 @@
   }
 
   &-card {
+    @include flex-center;
     background-color: $colour-background-primary;
     margin: 15px 0;
     border-radius: 16px;
     box-shadow: $shadow-primary;
     overflow: hidden;
     cursor: pointer;
-    @include flex-center;
-    @include desktop-only {
-      width: 27%;
+
+    @include desktop {
+      width: 29%;
     }
 
     &:nth-of-type(1) {
@@ -132,23 +137,39 @@
     &:hover {
       .menu-card-text {
         min-width: 72%;
-        transition: all 500ms ease-in-out;
+        @include transition;
       }
       .check-box {
         transform: translateX(0);
-        transition: all 500ms ease-in-out;
+        @include transition;
+        &::after {
+          transform: rotate(360deg);
+          @include transition;
+        }
       }
     }
+
     .check-box {
-      width: 90px;
-      height: 70px;
       background: $colour-tertiary;
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
+      height: 70px;
+      transform: translateX(10px);
+      @include tablet {
+        transform: translateX(15px);
+      }
+      @include tablet-large {
+        max-width: 80px;
+        transform: translateX(30px);
+        @include transition;
+      }
+
       &::after {
         font-family: "Font Awesome 6 Free";
         content: "\f058";
+        font-weight: bold;
         color: white;
         font-size: 24px;
       }
@@ -157,23 +178,22 @@
     &-text {
       min-width: 90%;
       line-height: 1.5;
-      transition: all 500ms ease-in-out;
+      @include transition;
       @include overflow;
 
-      h5 {
+      .meal-title {
         font-size: 18px;
         padding: 9px 0 0 10px;
         @include overflow;
       }
-      p {
-        padding: 0 2px 9px 10px;
+      .meal-subtitle {
+        padding: 0 3px 9px 10px;
         @include overflow;
       }
     }
 
     &-price {
-      margin-top: 28px;
-      margin-right: 16px;
+      margin: 28px 16px 0 0;
       font-weight: 500;
       font-size: 15px;
     }

@@ -1,5 +1,5 @@
 main {
-  @include desktop-only {
+  @include desktop {
     display: flex;
     flex-wrap: wrap;
   }
@@ -41,7 +41,7 @@ input {
   text-align: center;
   background-color: $colour-background-secondary;
   padding: 40px 0 70px;
-  @include desktop-only {
+  @include desktop {
     width: 62%;
     background-color: inherit;
     margin: auto;
@@ -59,18 +59,18 @@ input {
 
 .progress {
   padding: 33px 20px;
-  @include desktop-only {
+  @include desktop {
     width: 30%;
     margin-right: 15px;
   }
-  @include tablet-only {
+  @include tablet {
     margin: auto;
     max-width: 500px;
   }
 
   &-title {
     margin-bottom: 26px;
-    @include tablet-only {
+    @include tablet {
       width: fit-content;
       margin: auto auto 26px;
     }
@@ -128,17 +128,17 @@ input {
 #restaurants {
   background-color: $colour-background-secondary;
   padding: 38px 20px;
-  @include desktop-only {
+  @include desktop {
     width: 100%;
   }
-  @include tablet-only {
+  @include tablet {
     text-align: center;
   }
 
   .cards-container {
     padding: 0;
     list-style: none;
-    @include desktop-only {
+    @include desktop {
       display: flex;
       justify-content: space-between;
     }
@@ -149,10 +149,10 @@ input {
       border-radius: 16px;
       margin-bottom: 20px;
       box-shadow: $shadow-primary;
-      @include desktop-only {
+      @include desktop {
         width: 23%;
       }
-      @include tablet-only {
+      @include tablet {
         max-width: 600px;
         margin: auto auto 30px;
       }

@@ -10,13 +10,23 @@
   white-space: nowrap;
 }
 
-@mixin desktop-only {
+@mixin transition {
+  transition: all 500ms ease-out;
+}
+
+/**********MEDIA QUERIES*********/
+@mixin desktop {
   @media (min-width: 1160px) {
     @content;
   }
 }
 
-@mixin tablet-only {
+@mixin tablet-large {
+  @media (min-width: 846px) {
+    @content;
+  }
+}
+@mixin tablet {
   @media (min-width: 550px) {
     @content;
   }
