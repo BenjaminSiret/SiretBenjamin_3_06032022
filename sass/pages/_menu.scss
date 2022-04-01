@@ -104,10 +104,34 @@
   &-card {
     background-color: $colour-background-primary;
     margin: 15px 0;
-    padding: 9px 18px 9px 10px;
     border-radius: 16px;
     box-shadow: $shadow-primary;
-
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      .menu-card-text {
+        transition: all 700ms ease-in-out;
+      }
+      .green {
+        width: 100px;
+        transition: all 700ms ease-in-out;
+      }
+    }
+    .green {
+      width: 0px;
+      height: 70px;
+      left: 60px;
+      background: $colour-tertiary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f058";
+        color: white;
+        font-size: 26px;
+      }
+    }
     &:nth-of-type(1) {
       animation: fadein 1s ease-in-out;
     }
@@ -131,9 +155,16 @@
 
     &-text {
       line-height: 1.5;
+      @include overflow;
 
       h5 {
         font-size: 18px;
+        padding: 9px 18px 0 10px;
+        @include overflow;
+      }
+      p {
+        padding: 0 18px 9px 10px;
+        @include overflow;
       }
     }
 

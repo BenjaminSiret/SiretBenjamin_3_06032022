@@ -4,6 +4,12 @@
   justify-content: space-between;
 }
 
+@mixin overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @mixin desktop-only {
   @media (min-width: 1160px) {
     @content;
