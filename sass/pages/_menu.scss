@@ -108,30 +108,11 @@
     box-shadow: $shadow-primary;
     overflow: hidden;
     cursor: pointer;
-    &:hover {
-      .menu-card-text {
-        transition: all 700ms ease-in-out;
-      }
-      .green {
-        width: 100px;
-        transition: all 700ms ease-in-out;
-      }
+    @include flex-center;
+    @include desktop-only {
+      width: 27%;
     }
-    .green {
-      width: 0px;
-      height: 70px;
-      left: 60px;
-      background: $colour-tertiary;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &::after {
-        font-family: "Font Awesome 6 Free";
-        content: "\f058";
-        color: white;
-        font-size: 26px;
-      }
-    }
+
     &:nth-of-type(1) {
       animation: fadein 1s ease-in-out;
     }
@@ -148,28 +129,51 @@
       animation: fadein 2.5s ease-in-out;
     }
 
-    @include flex-center;
-    @include desktop-only {
-      width: 27%;
+    &:hover {
+      .menu-card-text {
+        min-width: 72%;
+        transition: all 500ms ease-in-out;
+      }
+      .check-box {
+        transform: translateX(0);
+        transition: all 500ms ease-in-out;
+      }
+    }
+    .check-box {
+      width: 90px;
+      height: 70px;
+      background: $colour-tertiary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f058";
+        color: white;
+        font-size: 24px;
+      }
     }
 
     &-text {
+      min-width: 90%;
       line-height: 1.5;
+      transition: all 500ms ease-in-out;
       @include overflow;
 
       h5 {
         font-size: 18px;
-        padding: 9px 18px 0 10px;
+        padding: 9px 0 0 10px;
         @include overflow;
       }
       p {
-        padding: 0 18px 9px 10px;
+        padding: 0 2px 9px 10px;
         @include overflow;
       }
     }
 
     &-price {
       margin-top: 28px;
+      margin-right: 16px;
       font-weight: 500;
       font-size: 15px;
     }
