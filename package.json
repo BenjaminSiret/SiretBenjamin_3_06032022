@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "projet_3 formation JavaScript / React",
   "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./sass/main.css -w ",
+    "prefix": "postcss ./sass/main.css --use autoprefixer -d ./sass/prefixed/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenjaminSiret/SiretBenjamin_3_06032022.git"
   },
   "author": "SiretBenjamin",
   "license": "ISC",
+  "browserslists": "last 4 versions",
   "bugs": {
     "url": "https://github.com/BenjaminSiret/SiretBenjamin_3_06032022/issues"
   },
