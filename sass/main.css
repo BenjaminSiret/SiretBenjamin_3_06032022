@@ -175,6 +175,7 @@ li {
   border: none;
   background-color: inherit;
   position: relative;
+  cursor: pointer;
 }
 
 .heart-button .fa-heart {
