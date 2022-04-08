@@ -172,7 +172,7 @@ li {
 
 .heart-button .fa-solid {
   position: absolute;
-  right: 4px;
+  right: 0px;
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 95%);
   -webkit-background-clip: text;
           background-clip: text;
